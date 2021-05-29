@@ -1,7 +1,7 @@
 import React from "react";
 
 const Portfolio = () => {
-  return <h2>this is the portfolio</h2>;
+  return <h1 id="section-title">Personal Projects</h1>;
 };
 
 export default Portfolio;

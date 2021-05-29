@@ -1,4 +1,6 @@
 #section-title {
   color: cadetblue;
-  text-align: center;
+  text-align: left;
+  width: 90%;
+  margin: 30px auto;
 }
