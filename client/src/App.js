@@ -18,6 +18,7 @@ function App() {
           <Route path="/contact" component={Contact} />
         </Switch>
       </Router>
+      <div className="previous-viewed">hello im the other grid</div>
     </div>
   );
 }
