@@ -3,7 +3,6 @@
 html {
   height: 100%;
   font-family: Verdana, sans-serif;
-  background: linear-gradient(to top, rgba(255, 255, 255), transparent);
 }
 
 body {
@@ -45,7 +44,7 @@ header {
 }
 
 .main-nav__item a {
-  color: black;
+  color: #333;
   transition: font-weight 0.2s;
   width: 100%;
 }
@@ -53,6 +52,7 @@ header {
 .main-nav__item a:hover,
 .main-nav__item a:active {
   font-weight: bold;
+  color: black;
 }
 
 .main-nav__item {
