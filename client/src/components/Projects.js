@@ -2,6 +2,8 @@ import React from "react";
 import Project from "./Project";
 import crytoImg from "../images/crypto.png";
 import gymImg from "../images/gymclub.png";
+import planeImg from "../images/spaceplane.png";
+import scrapbookImg from "../images/scrapbook.png";
 import "../projects.css";
 
 const Projects = () => {
@@ -11,7 +13,7 @@ const Projects = () => {
       about:
         "This project looks at spacecrafts in Low Earth Orbit using Rocket theory and Orbital Mechanics Optimizes the fuel requirements in order to reach a target orbit.",
       link: "https://github.com/Li-Ri/Spaceplane-Project",
-      image: "",
+      image: planeImg,
     },
     {
       title: "CryptoBite",
@@ -25,7 +27,7 @@ const Projects = () => {
       about:
         "Scrapbook is a social media app that allows users to create private rooms on their profile for groups to share content such as images and captioned posts as well live chat.",
       link: "https://github.com/Li-Ri/ScrapBook_Frontend",
-      iamge: "",
+      image: scrapbookImg,
     },
     {
       title: "Gym Booking App",
