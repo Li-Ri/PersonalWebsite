@@ -4,3 +4,9 @@
   width: 90%;
   margin: 30px auto;
 }
+
+.title__message {
+  text-align: center;
+  z-index: 100;
+  color: rgb(5, 87, 83);
+}
