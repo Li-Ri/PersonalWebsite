@@ -11,12 +11,6 @@ import "./App.css";
 function App() {
   const [showImg, setShowImg] = useState(false);
 
-  const styles = {
-    background: `linear-gradient(130deg, rgba(255, 255, 255) 40%, transparent 10%), linear-gradient(to bottom, rgba(0, 0, 0,0.8) 10%, transparent), url(${backgroundPhoto})`,
-    backgroundSize: "cover",
-    transition: "background 2s",
-  };
-
   const defaultStyle = {
     background: "white",
   };
