@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "./Project";
+import "../projects.css";
 
 const Projects = () => {
   const projects = [
@@ -20,6 +21,12 @@ const Projects = () => {
       about:
         "Scrapbook is a social media app that allows users to create private rooms on their profile for groups to share content such as images and captioned posts as well live chat.",
       link: "https://github.com/Li-Ri/ScrapBook_Frontend",
+    },
+    {
+      title: "Gym Booking App",
+      about:
+        "A booking app to manage the classes that instructors and members are booked onto as well as managing customer and employee data",
+      link: "https://github.com/Li-Ri/gym_app_Flask_Postgresql",
     },
   ];
 

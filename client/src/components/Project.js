@@ -5,8 +5,10 @@ const Project = ({ title, about, link }) => {
     <>
       <div className="project__container">
         <h3>{title}</h3>
-        <p>{about}</p>
-        <a href={link}>Repo</a>
+        <p>
+          {about}
+          <a href={link}>Repo</a>
+        </p>
       </div>
     </>
   );
