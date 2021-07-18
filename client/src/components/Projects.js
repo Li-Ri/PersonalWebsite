@@ -38,9 +38,11 @@ const Projects = () => {
     },
   ];
 
-  const projectList = projects.map((project) => {
+  const projectList = projects.map((project, index) => {
+    console.log(index);
     return (
       <Project
+        id={index}
         title={project.title}
         about={project.about}
         link={project.link}
@@ -48,7 +50,14 @@ const Projects = () => {
       />
     );
   });
-  return <div className="projects__container">{projectList}</div>;
+  return (
+    <>
+      <div className="projects__container">
+        <h1 id="title">Personal Projects</h1>
+        {projectList}
+      </div>
+    </>
+  );
 };
 
 export default Projects;
