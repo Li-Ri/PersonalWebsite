@@ -14,9 +14,16 @@
   min-width: 350px;
 }
 
-.project__container h3 {
+.project__container a {
   color: cadetblue;
   font-weight: bolder;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.project__container a:hover,
+.project__container a:active {
+  color: black;
 }
 
 #title {

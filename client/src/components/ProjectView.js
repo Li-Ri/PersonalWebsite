@@ -3,7 +3,11 @@ import React from "react";
 const ProjectView = ({ project }) => {
   return (
     <>
-      <h1>{project.title}</h1>
+      <div className="project-desc">
+        <h1>{project.title}</h1>
+        <img src={project.image} alt="" />
+        <p>{project.about}</p>
+      </div>
     </>
   );
 };
