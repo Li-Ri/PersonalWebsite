@@ -10,10 +10,8 @@ const Project = ({ title, about, link, image, id }) => {
         <h3>
           <a href={`/${id}`}>{title}</a>
         </h3>
-        <p>
-          {about}
-          <a href={link}>Repo</a>
-        </p>
+        <p className="project-desc">{about}</p>
+        <a href={link}>Go to Repo</a>
       </div>
     </>
   );
