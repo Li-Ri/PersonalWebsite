@@ -4,9 +4,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./components/About";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import ProjectView from "./components/ProjectView";
 import React, { useState } from "react";
 import backgroundPhoto from "./images/personal_site_background.jpg";
 import "./App.css";
+import projects from "./projectInfo";
 
 function App() {
   const [showImg, setShowImg] = useState(false);
@@ -21,9 +24,17 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Blog} />
-          <Route path="/projects" component={Portfolio} />
+          <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route
+            path="/:index"
+            render={(props) => {
+              const index = props.match.params.index;
+              const project = projects[index];
+              return <ProjectView project={project} />;
+            }}
+          />
         </Switch>
       </Router>
     </div>

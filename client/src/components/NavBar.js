@@ -14,8 +14,10 @@ const NavBar = ({ showImg, setShowImg }) => {
 
   return (
     <header>
-      <h2 id="logo-title">LR</h2>
-      <h4 id="quote">Tech is better well documented...</h4>
+      <div className="header-title">
+        <h2 id="logo-title">LR</h2>
+        <h4 id="quote">Tech is better well documented...</h4>
+      </div>
       <nav className="main-nav">
         <ul className="main-nav__items">
           <li className="main-nav__item">
