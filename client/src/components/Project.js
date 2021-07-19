@@ -1,4 +1,5 @@
 import React from "react";
+import gitLogo from "../images/gitlogo.png";
 
 const Project = ({ title, about, link, image, id }) => {
   return (
@@ -11,7 +12,9 @@ const Project = ({ title, about, link, image, id }) => {
           <a href={`/${id}`}>{title}</a>
         </h3>
         <p className="project-desc">{about}</p>
-        <a href={link}>Go to Repo</a>
+        <a href={link} className="git-logo">
+          <img src={gitLogo} alt="" />
+        </a>
       </div>
     </>
   );
