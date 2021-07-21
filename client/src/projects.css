@@ -9,7 +9,7 @@
   flex: 40%;
   margin: 10px;
   padding: 10px;
-  height: 50%;
+  height: auto;
   box-shadow: 2px 2px 11px 2px rgba(0, 0, 0, 0.2);
   min-width: 350px;
   text-align: justify;
@@ -36,7 +36,7 @@
 }
 
 .image__container {
-  height: 60%;
+  height: 50%;
   width: 100%;
   text-align: center;
 }
