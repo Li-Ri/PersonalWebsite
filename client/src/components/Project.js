@@ -9,12 +9,9 @@ const Project = ({ title, about, link, image, id }) => {
           <img src={image} alt="" />
         </div>
         <h3>
-          <a href={`/${id}`}>{title}</a>
+          <a href={link}>{title}</a>
         </h3>
         <p className="project-desc">{about}</p>
-        <a href={link} className="git-logo">
-          <img src={gitLogo} alt="" />
-        </a>
       </div>
     </>
   );
