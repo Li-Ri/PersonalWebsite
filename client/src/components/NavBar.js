@@ -41,11 +41,9 @@ const NavBar = ({ showImg, setShowImg }) => {
             </a>
           </li>
           <li className="main-nav__item">
-            <a href="/about">About</a>
+            <a href="/about">Who am I?</a>
           </li>
-          <li className="main-nav__item">
-            <a href="/contact">Contact</a>
-          </li>
+
           <li className="social-link">
             <img src={github} alt="" />
           </li>
