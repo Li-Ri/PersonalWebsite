@@ -1,7 +1,7 @@
 import React from "react";
 import gitLogo from "../images/gitlogo.png";
 
-const Project = ({ title, about, link, image, id }) => {
+const Project = ({ title, about, link, image, techStack }) => {
   return (
     <>
       <div className="project__container">
@@ -9,7 +9,9 @@ const Project = ({ title, about, link, image, id }) => {
           <img src={image} alt="" />
         </div>
         <h3>
-          <a href={link}>{title}</a>
+          <a href={link}>
+            {title} {techStack}
+          </a>
         </h3>
         <p className="project-desc">{about}</p>
       </div>

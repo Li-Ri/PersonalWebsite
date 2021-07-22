@@ -54,11 +54,12 @@ header {
   color: #333;
   transition: font-weight 0.2s;
   width: 100%;
+  transition: color 0.5s;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-  color: black;
+  color: #67bab2;
 }
 
 .main-nav__item {

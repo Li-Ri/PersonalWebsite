@@ -13,6 +13,7 @@ const Projects = () => {
         about={project.about}
         link={project.link}
         image={project.image}
+        techStack={project.techStack}
       />
     );
   });
