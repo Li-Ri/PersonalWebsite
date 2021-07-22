@@ -102,6 +102,12 @@ img {
   border: 1px solid black;
 }
 
+@media (max-width: 1000px) {
+  .profile-pic {
+    display: none;
+  }
+}
+
 .profile-pic {
   width: 165px;
   margin: 10px auto;
@@ -113,6 +119,7 @@ img {
   font-weight: 300;
   color: darkslategrey;
   font-size: 16px;
+  margin: 0 8px;
 }
 
 .welcome {
