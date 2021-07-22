@@ -112,3 +112,75 @@ img {
   color: darkslategrey;
   font-size: 16px;
 }
+
+.welcome {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  width: 40%;
+  text-align: justify;
+  margin: 5% auto;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.welcome a {
+  text-decoration: none;
+  color: #81d8d0;
+  padding: 5px;
+  margin: 5px;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.welcome h1 {
+  color: #81d8d0;
+  animation-name: fade;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.welcome p {
+  animation-name: fade;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+.welcome a:hover,
+.welcome a:active {
+  background-color: transparent;
+  color: #81d8d0;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
