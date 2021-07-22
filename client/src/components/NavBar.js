@@ -45,11 +45,14 @@ const NavBar = ({ showImg, setShowImg }) => {
           </li>
 
           <li className="social-link">
-            <img src={github} alt="" />
+            <a href="https://github.com/Li-Ri">
+              <img src={github} alt="" />
+            </a>
           </li>
           <li className="social-link">
-            {" "}
-            <img src={linked} alt="" />
+            <a href="https://www.linkedin.com/in/liam-richens-516314144/">
+              <img src={linked} alt="" />
+            </a>
           </li>
         </ul>
       </nav>

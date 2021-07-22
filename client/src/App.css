@@ -54,11 +54,12 @@ header {
   color: #333;
   transition: font-weight 0.2s;
   width: 100%;
+  transition: color 0.5s;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-  color: black;
+  color: #67bab2;
 }
 
 .main-nav__item {
@@ -89,15 +90,22 @@ img {
 
 .social-link {
   margin-right: 30px;
+  height: 40px;
 }
 
-.social-link img {
+.social-link a {
   margin: auto;
 }
 
 .profile-pic img {
   border-radius: 50%;
   border: 1px solid black;
+}
+
+@media (max-width: 1000px) {
+  .profile-pic {
+    display: none;
+  }
 }
 
 .profile-pic {
@@ -111,6 +119,7 @@ img {
   font-weight: 300;
   color: darkslategrey;
   font-size: 16px;
+  margin: 0 8px;
 }
 
 .welcome {
