@@ -136,10 +136,51 @@ img {
 }
 .welcome h1 {
   color: #81d8d0;
+  animation-name: fade;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
 }
 
+.welcome p {
+  animation-name: fade;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
 .welcome a:hover,
 .welcome a:active {
   background-color: transparent;
   color: #81d8d0;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
