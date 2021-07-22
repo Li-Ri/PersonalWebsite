@@ -6,14 +6,14 @@ const Blog = () => {
   const [typedTextSpan, setTypedText] = useState("");
   const [cursor, setCursor] = useState(false);
   const styles = {
-    background: `linear-gradient(130deg, rgba(255, 255, 255) 40%, transparent 10%), linear-gradient(to bottom, rgba(0, 0, 0,0.8) 10%, transparent), url(${backgroundPhoto})`,
+    background: ` linear-gradient(to top, rgba(0, 0, 0,0.9) 20%, transparent),url(${backgroundPhoto})`,
     backgroundSize: "cover",
     backgroundPosition: "50%",
     backgroundRepeat: "no-repeat",
-    opacity: 0.6,
     zIndex: -1,
+    margin: "10px",
   };
-  const textArray = [" Problem Solver", " Developer", "n Engineer"];
+  const textArray = ["Developer.", "Problem Solver.", "Programmer."];
   const typingDelay = 200;
   const erasingDelay = 100;
   const newTextDelay = 1000;
@@ -55,8 +55,13 @@ const Blog = () => {
     <>
       <div style={styles}>
         <h1 className="title__message">
-          I am a<span className="typed-text">{typedTextSpan}</span>
-          <span className={cursor ? "cursor typing" : "cursor"}>&nbsp;</span>
+          I am a <span className="typed-text">{typedTextSpan}</span>
+          <span
+            className={cursor ? "cursor typing" : "cursor"}
+            style={{ fontStyle: "italic" }}
+          >
+            &nbsp;
+          </span>
         </h1>
       </div>
     </>

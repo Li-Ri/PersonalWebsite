@@ -90,3 +90,11 @@ img {
   padding: 5px;
   margin-right: 30px;
 }
+
+.social-link {
+  text-align: left;
+}
+
+.social-link img {
+  margin: auto;
+}

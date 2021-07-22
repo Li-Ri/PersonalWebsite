@@ -38,8 +38,11 @@ const NavBar = ({ showImg, setShowImg }) => {
           <li className="main-nav__item">
             <a href="/contact">Contact</a>
           </li>
-          <li>
+          <li className="social-link">
             <img src={github} alt="" />
+          </li>
+          <li className="social-link">
+            {" "}
             <img src={linked} alt="" />
           </li>
         </ul>
