@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import github from "../images/git-logo.png";
 import linked from "../images/linked.png";
+import profilePic from "../images/profile_pic.png";
 
 const NavBar = ({ showImg, setShowImg }) => {
   const handleHover = () => {
@@ -15,8 +16,15 @@ const NavBar = ({ showImg, setShowImg }) => {
   return (
     <header>
       <div className="header-title">
-        <h2 id="logo-title">LR</h2>
-        <h4 id="quote">Tech is better well documented...</h4>
+        <h2 id="logo-title">Liam Richens</h2>
+        <div className="profile-pic">
+          <img src={profilePic} alt="" />
+        </div>
+        <h4 id="quote">Full Stack Engineer</h4>
+        <div className="contact-info">
+          <p>Tel: +44 7801174094</p>
+          <p>Email: liam.richens.11@gmail.com</p>
+        </div>
       </div>
       <nav className="main-nav">
         <ul className="main-nav__items">
@@ -33,13 +41,14 @@ const NavBar = ({ showImg, setShowImg }) => {
             </a>
           </li>
           <li className="main-nav__item">
-            <a href="/about">About</a>
+            <a href="/about">Who am I?</a>
           </li>
-          <li className="main-nav__item">
-            <a href="/contact">Contact</a>
-          </li>
-          <li>
+
+          <li className="social-link">
             <img src={github} alt="" />
+          </li>
+          <li className="social-link">
+            {" "}
             <img src={linked} alt="" />
           </li>
         </ul>
