@@ -66,12 +66,12 @@ const Blog = () => {
         <div className="welcome">
           <h1>Hi there, I'm Liam!</h1>
           <p>
-            I am a Software Developer looking to work on challenging and
-            exciting projects. Please checkout some of the
+            I am a Software Developer with passion for learning and finding
+            solutions to challenging problems. Checkout my
             <span>
               <a href="#">Portfolio</a>
-            </span>
-            I have been working on or visit my
+            </span>{" "}
+            to see what I have been working on or visit my
             <span>
               <a href="https://github.com/Li-Ri">Github</a>
             </span>
