@@ -8,10 +8,11 @@ const Blog = () => {
   const styles = {
     background: ` linear-gradient(to top, rgba(0, 0, 0,0.9) 20%, transparent),url(${backgroundPhoto})`,
     backgroundSize: "cover",
-    backgroundPosition: "50%",
+    backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
+    height: "100%",
     zIndex: -1,
-    margin: "10px",
+    overflow: "hidden",
   };
   const textArray = ["Developer.", "Problem Solver.", "Programmer."];
   const typingDelay = 200;

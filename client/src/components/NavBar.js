@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import github from "../images/git-logo.png";
 import linked from "../images/linked.png";
+import profilePic from "../images/profile_pic.png";
 
 const NavBar = ({ showImg, setShowImg }) => {
   const handleHover = () => {
@@ -15,8 +16,11 @@ const NavBar = ({ showImg, setShowImg }) => {
   return (
     <header>
       <div className="header-title">
-        <h2 id="logo-title">LR</h2>
-        <h4 id="quote">Tech is better well documented...</h4>
+        <h2 id="logo-title">Liam Richens</h2>
+        <div className="profile-pic">
+          <img src={profilePic} alt="" />
+        </div>
+        <h4 id="quote">Full Stack Engineer</h4>
       </div>
       <nav className="main-nav">
         <ul className="main-nav__items">
