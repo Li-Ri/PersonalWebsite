@@ -13,7 +13,7 @@ const Blog = () => {
     position: "relative",
     overflow: "hidden",
   };
-  const textArray = ["Developer.", "Problem Solver.", "Programmer."];
+  const textArray = ["Software Developer.", "Problem Solver.", "Programmer."];
   const typingDelay = 200;
   const erasingDelay = 100;
   const newTextDelay = 1000;
