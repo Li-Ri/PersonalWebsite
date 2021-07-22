@@ -10,8 +10,7 @@ const Blog = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "100%",
-    zIndex: -1,
+    position: "relative",
     overflow: "hidden",
   };
   const textArray = ["Developer.", "Problem Solver.", "Programmer."];
@@ -64,6 +63,21 @@ const Blog = () => {
             &nbsp;
           </span>
         </h1>
+        <div className="welcome">
+          <h1>Hi there, I'm Liam!</h1>
+          <p>
+            I am a Software Developer looking to work on challenging and
+            exciting projects. Please checkout some of the
+            <span>
+              <a href="#">Portfolio</a>
+            </span>
+            I have been working on or visit my
+            <span>
+              <a href="https://github.com/Li-Ri">Github</a>
+            </span>
+            .
+          </p>
+        </div>
       </div>
     </>
   );
