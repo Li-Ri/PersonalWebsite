@@ -40,7 +40,7 @@ header {
   height: 30%;
   text-align: center;
   width: 100%;
-  margin: 100px 0;
+  margin: 40px 0;
   font-weight: 400;
 }
 
@@ -101,6 +101,12 @@ img {
 }
 
 .profile-pic {
-  width: 170px;
+  width: 165px;
   margin: 10px auto;
+}
+.contact-info {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  color: darkslategrey;
 }

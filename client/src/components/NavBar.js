@@ -21,6 +21,10 @@ const NavBar = ({ showImg, setShowImg }) => {
           <img src={profilePic} alt="" />
         </div>
         <h4 id="quote">Full Stack Engineer</h4>
+        <div className="contact-info">
+          <p>Tel: +44 7801174094</p>
+          <p>Email: liam.richens.11@gmail.com</p>
+        </div>
       </div>
       <nav className="main-nav">
         <ul className="main-nav__items">
