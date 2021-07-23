@@ -28,14 +28,7 @@ jobs:
 workflows:
   version: 2.1
   build:
-    jobs:
-      - test:
+    - deploy:
         filters:
           branches:
-            only:
-              - master
-              - develop
-      - deploy:
-          filters:
-            branches:
-              only: master
+            only: master
