@@ -1,20 +1,41 @@
+version: 2.1
+orbs:
+  aws-s3: circleci/aws-s3@1.0.4
 jobs:
-  build_deploy:
-    machine:
-      image: ubuntu-2004:202010-01
+  test:
+    docker:
+      - image: circleci/node
     steps:
       - checkout
-      - run:
-          name: Installing AWS CLI
-          command:
-            # prettier-ignore
-            sudo apt-get update
-            sudo apt-get install python3-pip
-            sudo pip3 install awsebcli --upgrade
-      - run: cd ./client && npm install && npm run build
-      - run: aws s3 sync ./client/build s3://liam-richens-portfolio
+      - run: npm install
+      - run: npm test
+  deploy:
+    docker:
+      - image: circleci/node
+    environment:
+      AWS_REGION: eu-west-2
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+      - aws-s3/sync:
+          from: build
+          to: "s3://liam-richens-portfolio/"
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400" \
+          overwrite: true
 workflows:
-  version: 2
-  execute_bulk:
+  version: 2.1
+  build:
     jobs:
-      - build_deploy
+      - test:
+        filters:
+          branches:
+            only:
+              - master
+              - develop
+      - deploy:
+          filters:
+            branches:
+              only: master
