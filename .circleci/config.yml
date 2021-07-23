@@ -10,7 +10,7 @@ jobs:
             # prettier-ignore
             sudo apt-get update
             sudo apt install python3-pip
-            sudo pip3 install awsebcli --upgrade
+            sudo pip3 install awsebcli --upgrade --user
       - run: cd ./client && npm install && npm run build
       - run: aws s3 sync ./client/build s3://liam-richens-portfolio
 workflows:
