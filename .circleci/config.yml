@@ -6,7 +6,9 @@ jobs:
       - checkout
       - run:
           name: Installing AWS CLI
-          command: sudo apt-get update
+          command:
+            # prettier-ignore
+            sudo apt-get update
             sudo apt install python3-pip
             sudo pip3 install awsebcli --upgrade
       - run: cd ./client && npm install && npm run build
