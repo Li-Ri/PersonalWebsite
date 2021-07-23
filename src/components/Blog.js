@@ -46,9 +46,11 @@ const Blog = () => {
       setTimeout(type, typingDelay + 1100);
     }
   };
-
+  // eslint-disable-next-line
   useEffect(() => {
+    // eslint-disable-next-line
     setTimeout(type, 2000);
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -69,7 +71,7 @@ const Blog = () => {
             I am a Software Developer with passion for learning and finding
             solutions to challenging problems. Checkout my
             <span>
-              <a href="#">Portfolio</a>
+              <a href="/projects">Portfolio</a>
             </span>{" "}
             to see what I have been working on or visit my
             <span>

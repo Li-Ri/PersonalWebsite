@@ -1,4 +1,3 @@
-import Portfolio from "./containers/Portfolio";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./components/About";
@@ -7,16 +6,11 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import ProjectView from "./components/ProjectView";
 import React, { useState } from "react";
-import backgroundPhoto from "./images/personal_site_background.jpg";
 import "./App.css";
 import projects from "./projectInfo";
 
 function App() {
   const [showImg, setShowImg] = useState(false);
-
-  const defaultStyle = {
-    background: "white",
-  };
 
   return (
     <div className="App grid-container">

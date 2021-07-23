@@ -1,5 +1,4 @@
 import React from "react";
-import gitLogo from "../images/gitlogo.png";
 
 const Project = ({ title, about, link, image, techStack }) => {
   return (
