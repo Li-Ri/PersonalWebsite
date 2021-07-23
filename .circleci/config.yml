@@ -11,7 +11,7 @@ jobs:
             sudo pip3 install awsebcli --upgrade
       - run: cd ./client && npm install && npm run build
       - run: aws s3 sync ./client/build s3://liam-richens-portfolio
-  workflow:
+  workflows:
     version: 2
     execute_bulk:
       jobs:
