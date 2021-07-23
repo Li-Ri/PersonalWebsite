@@ -15,4 +15,4 @@ workflows:
   version: 2
   execute_bulk:
     jobs:
-      - build-deploy
+      - build_deploy
