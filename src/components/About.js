@@ -7,6 +7,7 @@ const About = () => {
         <h1 id="section-title">Hi, I'm Liam Richens</h1>
         <div className="about">
           <div className="about-text">
+            <h2>Bio</h2>
             <p>
               My name is Liam and I am a Software Developer. I began my journey
               into software development while undertaking my master’s degree in
@@ -32,6 +33,27 @@ const About = () => {
             </p>
           </div>
           <div className="about-img"></div>
+        </div>
+        <div className="timeline about">
+          <h2>Timeline</h2>
+        </div>
+        <div className="skills about">
+          <h2>Software Knowledge</h2>
+        </div>
+        <div className="interests about">
+          <h2>Other Interests</h2>
+          <p>
+            I really enjoy learning about space which motivated me to take my
+            masters in Aerospace. I've always enjoyed learning how things work
+            and being massively in to science fiction from a young age prompted
+            the curiosity to learn more about space, specifically how travel in
+            space.
+          </p>
+          <p>
+            Outside of software development I also enjoy Weight lifting, Rugby,
+            Table Tennis and Film. I also work on home automation projects with
+            my Raspberry Pi that can be found on my github.
+          </p>
         </div>
       </div>
     </>
