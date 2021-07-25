@@ -4,6 +4,8 @@ import backgroundImage from "../images/background-image.jpg";
 import pythonLogo from "../images/python-logo.png";
 import jsLogo from "../images/js-logo.png";
 import javaLogo from "../images/java-logo.png";
+import photographerImage from "../images/photographer.png";
+import glasgowImage from "../images/glasgow.png";
 
 const About = () => {
   const [scrollHeight, setScrollheight] = useState(0);
@@ -12,7 +14,7 @@ const About = () => {
     setScrollheight(newScrollHeight);
   });
   const parallax = {
-    height: "60%",
+    height: "70%",
     backgroundImage: `linear-gradient(to top, black 10%, transparent 90%), url("${backgroundImage}")`,
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
@@ -46,6 +48,7 @@ const About = () => {
               great engineer.
             </p>
           </div>
+          <div className="profile-pic"></div>
         </div>
 
         <div className="skills">
@@ -53,12 +56,21 @@ const About = () => {
           <div className="images__container">
             <div className="image__container">
               <img src={pythonLogo} alt="" />
+              <div className="related-tech">
+                <p>Flask, Scipy, NumPy, Pandas</p>
+              </div>
             </div>
             <div className="image__container">
               <img src={jsLogo} alt="" />
+              <div className="related-tech">
+                <p>React, Express, Chart.JS</p>
+              </div>
             </div>
             <div className="image__container">
               <img src={javaLogo} alt="" />
+              <div className="related-tech">
+                <p>Spring</p>
+              </div>
             </div>
           </div>
         </div>
