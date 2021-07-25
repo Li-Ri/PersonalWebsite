@@ -6,6 +6,7 @@ import jsLogo from "../images/js-logo.png";
 import javaLogo from "../images/java-logo.png";
 import photographerImage from "../images/photographer.png";
 import glasgowImage from "../images/glasgow.png";
+import mongoDB from "../images/mongoDB.png";
 
 const About = () => {
   const [scrollHeight, setScrollheight] = useState(0);
@@ -63,13 +64,19 @@ const About = () => {
             <div className="image__container">
               <img src={jsLogo} alt="" />
               <div className="related-tech">
-                <p>React, Express, Chart.JS</p>
+                <p>React, Express, Chart.JS, </p>
               </div>
             </div>
             <div className="image__container">
               <img src={javaLogo} alt="" />
               <div className="related-tech">
                 <p>Spring</p>
+              </div>
+            </div>
+            <div className="database">
+              <img src={mongoDB} alt="" />
+              <div className="related-tech">
+                <p>MongoDB</p>
               </div>
             </div>
           </div>
