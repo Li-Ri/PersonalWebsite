@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../about.css";
 import backgroundImage from "../images/background-image.jpg";
 const About = () => {
+  const [scrollHeight, setScrollheight] = useState(0);
+  window.addEventListener("scroll", () => {
+    const newScrollHeight = window.scrollY;
+    setScrollheight(newScrollHeight);
+  });
   const parallax = {
     height: "60%",
     backgroundImage: `url("${backgroundImage}")`,
@@ -9,13 +14,14 @@ const About = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    opacity: Math.min(200 / scrollHeight),
   };
   return (
     <>
       <div className="about-section">
         <div className="about" style={parallax}>
           <div className="about-text">
-            <h2>Bio</h2>
+            <h2>Biography</h2>
             <p>
               My name is Liam and I am a Software Developer. I began my journey
               into software development while undertaking my master’s degree in
