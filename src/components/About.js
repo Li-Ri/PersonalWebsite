@@ -1,11 +1,19 @@
 import React from "react";
 import "../about.css";
+import backgroundImage from "../images/background-image.jpg";
 const About = () => {
+  const parallax = {
+    height: "60%",
+    backgroundImage: `url("${backgroundImage}")`,
+    backgroundAttachment: "fixed",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
   return (
     <>
       <div className="about-section">
-        <h1 id="section-title">Hi, I'm Liam Richens</h1>
-        <div className="about">
+        <div className="about" style={parallax}>
           <div className="about-text">
             <h2>Bio</h2>
             <p>
@@ -27,33 +35,27 @@ const About = () => {
               my Software Development Journey, I am fully committed to being a
               great engineer.
             </p>
-            <p>
-              Feel free to check out my projects and contact me if you have any
-              questions.
-            </p>
           </div>
-          <div className="about-img"></div>
         </div>
-        <div className="timeline about">
+        <div className="timeline">
           <h2>Timeline</h2>
         </div>
-        <div className="skills about">
+        <div className="skills">
           <h2>Software Knowledge</h2>
         </div>
-        <div className="interests about">
-          <h2>Other Interests</h2>
-          <p>
-            I really enjoy learning about space which motivated me to take my
-            masters in Aerospace. I've always enjoyed learning how things work
-            and being massively in to science fiction from a young age prompted
-            the curiosity to learn more about space, specifically how travel in
-            space.
-          </p>
-          <p>
-            Outside of software development I also enjoy Weight lifting, Rugby,
-            Table Tennis and Film. I also work on home automation projects with
-            my Raspberry Pi that can be found on my github.
-          </p>
+        <div className="interests">
+          <h2>Interests</h2>
+          <ul>
+            <li>
+              I love science fiction and i am fascinated by space, specifically
+              how travel works in space
+            </li>
+            <li>All things Film</li>
+            <li>
+              I'm also into mechanical keyboards, currently rocking the Keychron
+              K2V2, here's a pic of us together
+            </li>
+          </ul>
         </div>
       </div>
     </>
