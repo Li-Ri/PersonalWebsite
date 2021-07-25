@@ -9,7 +9,7 @@ const About = () => {
   });
   const parallax = {
     height: "60%",
-    backgroundImage: `url("${backgroundImage}")`,
+    backgroundImage: `linear-gradient(to top, black 10%, transparent 90%), url("${backgroundImage}")`,
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
