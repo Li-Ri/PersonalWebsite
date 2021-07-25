@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "../about.css";
 import backgroundImage from "../images/background-image.jpg";
+import pythonLogo from "../images/python-logo.png";
+import jsLogo from "../images/js-logo.png";
+import javaLogo from "../images/java-logo.png";
+
 const About = () => {
   const [scrollHeight, setScrollheight] = useState(0);
   window.addEventListener("scroll", () => {
@@ -43,11 +47,20 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="timeline">
-          <h2>Timeline</h2>
-        </div>
+
         <div className="skills">
           <h2>Software Knowledge</h2>
+          <div className="images__container">
+            <div className="image__container">
+              <img src={pythonLogo} alt="" />
+            </div>
+            <div className="image__container">
+              <img src={jsLogo} alt="" />
+            </div>
+            <div className="image__container">
+              <img src={javaLogo} alt="" />
+            </div>
+          </div>
         </div>
         <div className="interests">
           <h2>Interests</h2>

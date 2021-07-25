@@ -9,7 +9,7 @@
 
 .about-text {
   width: 70%;
-  margin: 0 12px;
+  margin: 0 30px;
   text-align: justify;
 }
 
@@ -17,11 +17,12 @@
   font-size: 40px;
   font-weight: bolder;
   color: #81d8d0;
+  padding-top: 10px;
 }
 
 .about-text p {
   color: white;
-  font-size: 23px;
+  font-size: 26px;
   font-weight: 300;
   margin: 10px 0;
 }
@@ -29,4 +30,15 @@
 .about-section {
   margin: 0;
   padding: 0;
+}
+
+/* skills container */
+
+.images__container {
+  display: flex;
+}
+
+.image__container img {
+  height: 100px;
+  width: 100px;
 }
