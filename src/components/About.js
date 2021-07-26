@@ -15,41 +15,57 @@ const About = () => {
     setScrollheight(newScrollHeight);
   });
   const parallax = {
-    height: "70%",
-    backgroundImage: `linear-gradient(to top, black 10%, transparent 90%), url("${backgroundImage}")`,
+    height: "28%",
+    backgroundImage: `linear-gradient(to top, black 40%, transparent 90%), url("${glasgowImage}")`,
     backgroundAttachment: "fixed",
-    backgroundPosition: "center",
+    backgroundPosition: "bottom",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    opacity: Math.min(200 / scrollHeight),
+    opacity: Math.min(100 / scrollHeight),
   };
   return (
     <>
       <div className="about-section">
         <div className="about" style={parallax}>
-          <div className="about-text">
-            <h2>Biography</h2>
-            <p>
-              My name is Liam and I am a Software Developer. I began my journey
-              into software development while undertaking my master’s degree in
-              Aerospace Engineering. I decided to learn python for academic
-              projects which led me to create small personal projects to help my
-              work flow.
-            </p>
-            <p>
-              From this initial exposure to programming I was hooked and so I
-              began to learn JavaScript to build on the foundation i had learnt
-              with Python and begin building more ambitious web applications
-              with frameworks and libraries such as Express and React.
-            </p>
-            <p>
-              I found a sincere passion for software development and what it
-              means to be a software engineer. Although I am at the beginning of
-              my Software Development Journey, I am fully committed to being a
-              great engineer.
-            </p>
-          </div>
-          <div className="profile-pic"></div>
+          <h1>Who am I?</h1>
+          <ul>
+            <li>
+              <a href="" className="nav-link">
+                Biography
+              </a>
+            </li>
+            <li>
+              <p>|</p>
+            </li>
+            <li>
+              <a href="" className="nav-link">
+                Software Skills
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="about-text">
+          <h2>Biography</h2>
+          <p>
+            My name is Liam and I am a Software Developer. I began my journey
+            into software development while undertaking my master’s degree in
+            Aerospace Engineering. I decided to learn python for academic
+            projects which led me to create small personal projects to help my
+            work flow.
+          </p>
+          <p>
+            From this initial exposure to programming I was hooked and so I
+            began to learn JavaScript to build on the foundation i had learnt
+            with Python and begin building more ambitious web applications with
+            frameworks and libraries such as Express and React.
+          </p>
+          <p>
+            I found a sincere passion for software development and what it means
+            to be a software engineer. Although I am at the beginning of my
+            Software Development Journey, I am fully committed to being a great
+            engineer.
+          </p>
         </div>
 
         <div className="skills">
