@@ -7,6 +7,7 @@ import javaLogo from "../images/java-logo.png";
 import photographerImage from "../images/photographer.png";
 import glasgowImage from "../images/glasgow.png";
 import mongoDB from "../images/mongoDB.png";
+import nodeImg from "../images/nodeJS.png";
 
 const About = () => {
   const [scrollHeight, setScrollheight] = useState(0);
@@ -39,7 +40,7 @@ const About = () => {
           <h1>Who am I?</h1>
           <ul>
             <li>
-              <a href="" className="nav-link">
+              <a href="#bio" className="nav-link">
                 Biography
               </a>
             </li>
@@ -47,15 +48,14 @@ const About = () => {
               <p>|</p>
             </li>
             <li>
-              <a href="" className="nav-link">
-                Software Skills
+              <a href="#skills" className="nav-link">
+                Skills
               </a>
             </li>
           </ul>
         </div>
         <div className="about-me">
-          <div className="about-text">
-            <h2>Biography</h2>
+          <div className="about-text" id="bio">
             <p>
               My name is Liam and I am a Software Developer. I began my journey
               into software development while undertaking my master’s degree in
@@ -79,8 +79,8 @@ const About = () => {
         </div>
         <div className="bio-photo" style={bioPhotoStyles}></div>
 
-        <div className="skills">
-          <h2>Software Knowledge</h2>
+        <div className="skills" id="skills">
+          <h2>Skills</h2>
           <div className="images__container">
             <div className="image__container">
               <img src={pythonLogo} alt="" />
@@ -100,27 +100,19 @@ const About = () => {
                 <p>Spring</p>
               </div>
             </div>
-            <div className="database">
+            <div className="database image__container">
               <img src={mongoDB} alt="" />
               <div className="related-tech">
                 <p>MongoDB</p>
               </div>
             </div>
+            <div className="image__container">
+              <img src={nodeImg} alt="" />
+              <div className="related-tech">
+                <p>Node.JS</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="interests">
-          <h2>Interests</h2>
-          <ul>
-            <li>
-              I love science fiction and i am fascinated by space, specifically
-              how travel works in space
-            </li>
-            <li>All things Film</li>
-            <li>
-              I'm also into mechanical keyboards, currently rocking the Keychron
-              K2V2, here's a pic of us together
-            </li>
-          </ul>
         </div>
       </div>
     </>
