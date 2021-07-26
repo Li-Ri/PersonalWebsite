@@ -23,6 +23,15 @@ const About = () => {
     backgroundSize: "cover",
     opacity: Math.min(100 / scrollHeight),
   };
+
+  const bioPhotoStyles = {
+    height: "28%",
+    backgroundImage: `url("${photographerImage}")`,
+    backgroundAttachment: "fixed",
+    backgroundPosition: "top",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
   return (
     <>
       <div className="about-section">
@@ -44,29 +53,31 @@ const About = () => {
             </li>
           </ul>
         </div>
-
-        <div className="about-text">
-          <h2>Biography</h2>
-          <p>
-            My name is Liam and I am a Software Developer. I began my journey
-            into software development while undertaking my master’s degree in
-            Aerospace Engineering. I decided to learn python for academic
-            projects which led me to create small personal projects to help my
-            work flow.
-          </p>
-          <p>
-            From this initial exposure to programming I was hooked and so I
-            began to learn JavaScript to build on the foundation i had learnt
-            with Python and begin building more ambitious web applications with
-            frameworks and libraries such as Express and React.
-          </p>
-          <p>
-            I found a sincere passion for software development and what it means
-            to be a software engineer. Although I am at the beginning of my
-            Software Development Journey, I am fully committed to being a great
-            engineer.
-          </p>
+        <div className="about-me">
+          <div className="about-text">
+            <h2>Biography</h2>
+            <p>
+              My name is Liam and I am a Software Developer. I began my journey
+              into software development while undertaking my master’s degree in
+              Aerospace Engineering. I decided to learn python for academic
+              projects which led me to create small personal projects to help my
+              work flow.
+            </p>
+            <p>
+              From this initial exposure to programming I was hooked and so I
+              began to learn JavaScript to build on the foundation i had learnt
+              with Python and begin building more ambitious web applications
+              with frameworks and libraries such as Express and React.
+            </p>
+            <p>
+              I found a sincere passion for software development and what it
+              means to be a software engineer. Although I am at the beginning of
+              my Software Development Journey, I am fully committed to being a
+              great engineer.
+            </p>
+          </div>
         </div>
+        <div className="bio-photo" style={bioPhotoStyles}></div>
 
         <div className="skills">
           <h2>Software Knowledge</h2>

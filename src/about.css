@@ -33,6 +33,10 @@
   font-size: 26px;
 }
 
+.about-me {
+  display: flex;
+}
+
 .nav-link {
   color: white;
   text-decoration: none;
@@ -42,8 +46,9 @@
 }
 .about-text {
   width: 70%;
-  margin: 0 30px;
+  margin: 0 auto;
   text-align: justify;
+  padding: 20px 0;
 }
 
 .about-text h2 {
