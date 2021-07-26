@@ -105,8 +105,8 @@ const About = () => {
           <div className="pi-section">
             <p>
               Outside of web development I enjoy sports such as weightlifting,
-              Rugby, Table Tennis and working on my home projects with Raspberry
-              Pi.
+              Rugby, and Table Tennis. In my free time I like working on my home
+              projects with Raspberry Pi.
             </p>
             <div className="pi-container">
               <img src={piImg} alt="" />
