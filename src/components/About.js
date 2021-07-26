@@ -81,7 +81,7 @@ const About = () => {
             </p>
             <p>
               From this initial exposure to programming I was hooked and so I
-              began to learn JavaScript to build on the foundation i had learnt
+              began to learn JavaScript to build on the foundation I had learnt
               with Python and begin building more ambitious web applications
               with frameworks and libraries such as Express and React.
             </p>

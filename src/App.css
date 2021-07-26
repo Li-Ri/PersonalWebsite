@@ -158,6 +158,7 @@ img {
   animation-name: fade;
   animation-duration: 6s;
   animation-fill-mode: forwards;
+  color: white;
 }
 .welcome a:hover,
 .welcome a:active {
