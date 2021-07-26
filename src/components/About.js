@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../about.css";
-import backgroundImage from "../images/background-image.jpg";
 import pythonLogo from "../images/python-logo.png";
 import jsLogo from "../images/js-logo.png";
 import javaLogo from "../images/java-logo.png";
