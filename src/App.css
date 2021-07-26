@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+header {
+  height: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.7fr 4fr;
+  height: 100%;
+}
+
+.header-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+}
+
+.main-nav {
+  display: flex;
+  align-items: top;
+  width: 100%;
+}
+
+.main-nav__items {
+  font-family: "Playfair Display", serif;
+  list-style-type: none;
+  height: 30%;
+  text-align: center;
+  width: 100%;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.main-nav a {
+  text-decoration: none;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.main-nav__item a {
+  color: #333;
+  transition: font-weight 0.2s;
+  width: 100%;
+  transition: color 0.5s;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #67bab2;
+}
+
+.main-nav__item {
+  padding-bottom: 40px;
+  padding-right: 20px;
+  font-size: 20px;
+  width: 100%;
+}
+
+#logo-title {
+  margin: 20px;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+
+#quote {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
+
+img {
+  padding: 5px;
+  margin-right: 30px;
+}
+
+.social-link {
+  margin-right: 30px;
+  height: 40px;
+}
+
+.social-link a {
+  margin: auto;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+@media (max-width: 1000px) {
+  .profile-pic {
+    display: none;
+  }
+}
+
+.profile-pic {
+  width: 165px;
+  margin: 10px auto;
+}
+
+.contact-info {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  color: darkslategrey;
+  font-size: 16px;
+  margin: 0 8px;
+}
+
+.welcome {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  width: 40%;
+  text-align: justify;
+  margin: 5% auto;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.welcome a {
+  text-decoration: none;
+  color: #81d8d0;
+  padding: 5px;
+  margin: 5px;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.welcome h1 {
+  color: #81d8d0;
+  animation-name: fade;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+.welcome p {
+  animation-name: fade;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+.welcome a:hover,
+.welcome a:active {
+  background-color: transparent;
+  color: #81d8d0;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

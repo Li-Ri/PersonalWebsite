@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  width: 100%;
+}
+
+.about h1 {
+  color: white;
+  font-family: "Playfair Display, serif";
+  text-align: center;
+  padding-top: 100px;
+  font-size: 90px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  margin: 0 30%;
+}
+
+.about ul {
+  display: flex;
+  justify-content: center;
+}
+
+.about > ul > li {
+  padding: 10px;
+  list-style: none;
+}
+
+.about > ul > li > p {
+  color: white;
+  font-size: 26px;
+}
+
+.about-me {
+  display: flex;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-family: "Playfair Display, serif";
+  font-size: 26px;
+  text-decoration: none;
+}
+.about-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 20px 0;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #81d8d0;
+  padding-top: 10px;
+}
+
+.about-text p {
+  color: black;
+  font-size: 26px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.about-section {
+  margin: 0;
+  padding: 0;
+}
+
+/* skills container */
+
+.images__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image__container {
+  flex: 30%;
+}
+
+.image__container img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.related-tech p {
+  color: grey;
+  font-style: italic;
+  text-align: center;
+}
+
+.database {
+  text-align: center;
+}
+
+.database img {
+  height: 90px;
+  width: 200px;
+}
+
+.skills h2 {
+  text-align: center;
+  color: #81d8d0;
+  font-size: 33px;
+  font-weight: 500;
+  margin: 10px;
+}
