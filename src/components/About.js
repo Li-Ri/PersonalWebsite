@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../about.css";
+import "../App.css";
 import pythonLogo from "../images/python-logo.png";
 import jsLogo from "../images/js-logo.png";
 import javaLogo from "../images/java-logo.png";
@@ -7,6 +8,9 @@ import photographerImage from "../images/photographer.png";
 import glasgowImage from "../images/glasgow.png";
 import mongoDB from "../images/mongoDB.png";
 import nodeImg from "../images/nodeJS.png";
+import postgresImg from "../images/postgres.png";
+import piImg from "../images/pi.png";
+import mechKeyboardImg from "../images/mech-keyboard.png";
 
 const About = () => {
   const [scrollHeight, setScrollheight] = useState(0);
@@ -15,7 +19,7 @@ const About = () => {
     setScrollheight(newScrollHeight);
   });
   const parallax = {
-    height: "28%",
+    height: "20%",
     backgroundImage: `linear-gradient(to top, black 40%, transparent 90%), url("${glasgowImage}")`,
     backgroundAttachment: "fixed",
     backgroundPosition: "bottom",
@@ -32,6 +36,15 @@ const About = () => {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   };
+
+  const keyboardStyle = {
+    height: "23%",
+    backgroundImage: `url("${mechKeyboardImg}")`,
+    backgroundAttachment: "fixed",
+    backgroundPosition: "top right",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
   return (
     <>
       <div className="about-section">
@@ -43,9 +56,13 @@ const About = () => {
                 Biography
               </a>
             </li>
+            <li>|</li>
             <li>
-              <p>|</p>
+              <a href="#interests" className="nav-link">
+                Interests
+              </a>
             </li>
+            <li>|</li>
             <li>
               <a href="#skills" className="nav-link">
                 Skills
@@ -77,6 +94,26 @@ const About = () => {
           </div>
         </div>
         <div className="bio-photo" style={bioPhotoStyles}></div>
+        <div className="interests" id="interests">
+          <div className="keyboard-section">
+            <h2>Hobbies & Interests.</h2>
+            <p>
+              I also have love for Film, Photography and have a fondness for
+              mechanical keyboards.
+            </p>
+          </div>
+          <div className="pi-section">
+            <p>
+              Outside of web development I enjoy sports such as weightlifting,
+              Rugby, Table Tennis and working on my home projects with Raspberry
+              Pi.
+            </p>
+            <div className="pi-container">
+              <img src={piImg} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="keyboard-img" style={keyboardStyle}></div>
 
         <div className="skills" id="skills">
           <h2>Skills</h2>
@@ -109,6 +146,12 @@ const About = () => {
               <img src={nodeImg} alt="" />
               <div className="related-tech">
                 <p>Node.JS</p>
+              </div>
+            </div>
+            <div className="image__container">
+              <img src={postgresImg} alt="" />
+              <div className="related-tech">
+                <p>PostgreSQL</p>
               </div>
             </div>
           </div>
